@@ -7,9 +7,6 @@ img
 #### Desenvolvedor(a)
 Tiago Ribeiro Chagas
 
-#### Cliente
-Gustavo Reis
-
 #### Tecnologias
 
 - HTML
@@ -19,19 +16,16 @@ Gustavo Reis
 
 #### Ambiente de desenvolvimento
 
-Preencha aqui uma lista detalhada de ferramentas de desenvolvimento usadas, por exemplo:
 - VS Code
 - Navegador (Google Chrome)
 
 #### Créditos
 
-Template: https://www.w3schools.com/bootstrap/bootstrap_templates.asp
-
-Notícia original: https://br.ign.com/bloodborne-2/107274/news/bloodborne-2-fromsoftware-estaria-trabalhando-em-novo-jogo-nao-anunciado
+API Jikan: https://jikan.moe/
 
 #### Bastidores
 
-No projeto foi aprendida a utilização de template com Bootstrap, organização de tags "header" em ordem crescente, a utilização da ferramenta "inspecionar" para copiar valores hex de cores.
+No projeto foi aprendido como criar e retornar componentes HTML de um arquivo Javascript, além de como salvar dados localmente, também utilizando apenas Javascript
 
 ---
 Projeto entregue para a disciplina de [Desenvolvimento de Software para a Web](http://github.com/andreainfufsm/elc1090-2023a) em 2023a
