@@ -35,6 +35,7 @@ searchForm.addEventListener('submit', async function(event) {
 function addAnime(id){
   addedAnimes = JSON.parse(localStorage.getItem("addedAnimes"))
   let isAlreadyAdded = false
+  console.log(addedAnimes)
   if(addedAnimes)
     isAlreadyAdded = !!addedAnimes.filter(anime => anime.mal_id == id) == 0
   if(isAlreadyAdded || !addedAnimes){
