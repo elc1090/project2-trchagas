@@ -34,10 +34,10 @@ searchForm.addEventListener('submit', async function(event) {
 
 function addAnime(id){
   addedAnimes = JSON.parse(localStorage.getItem("addedAnimes"))
-  if(addedAnimes.filter(anime => anime.mal_id == id) == 0){
+  if(addedAnimes.filter(anime => anime.mal_id == id) == 0 || !addedAnimes){
     newAnime = animesList.find(anime => anime.mal_id == id);
     newAnime.currentEpisode = 1;
-    addedAnimes = [...addedAnimes, newAnime]
+    addedAnimes = addedAnimes ? [...addedAnimes, newAnime] : [newAnime]
     localStorage.setItem("addedAnimes", JSON.stringify(addedAnimes));
   }
 }
