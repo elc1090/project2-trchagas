@@ -3,7 +3,7 @@ let addedAnimes = JSON.parse(localStorage.getItem("addedAnimes"))
 function getAnimes(){
     const animesList = document.querySelector('#animes-list');
     animesListHTML = ""
-    addedAnimes.length == 0 ? animesListHTML = "<p>Nenhum anime adicionado</p>" : addedAnimes.forEach(anime => {
+    !addedAnimes ? animesListHTML = "<p>Nenhum anime adicionado</p>" : addedAnimes.forEach(anime => {
         animesListHTML += `
         <div id=${anime.mal_id} class="card card-margin" style="width: 18rem;">
             <img class="card-img-left" src="${anime.images.jpg.image_url}">
