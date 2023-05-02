@@ -34,7 +34,6 @@ searchForm.addEventListener('submit', async function(event) {
 
 function addAnime(id){
   addedAnimes = JSON.parse(localStorage.getItem("addedAnimes"))
-  console.log(addedAnimes)
   if(!addedAnimes) addedAnimes = []
   if(addedAnimes.filter(anime => anime.mal_id == id).length == 0){
     newAnime = animesList.find(anime => anime.mal_id == id);
