@@ -2,7 +2,9 @@
 
 Link do site: https://elc1090.github.io/project2-trchagas/
 
-img
+![image](https://user-images.githubusercontent.com/49379007/235590024-195b0538-712d-47b2-9e78-edfbf02b1466.png)
+
+![image](https://user-images.githubusercontent.com/49379007/235590422-3688f103-b406-4372-81b0-e184b7b79411.png)
 
 #### Desenvolvedor(a)
 Tiago Ribeiro Chagas
