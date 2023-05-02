@@ -34,7 +34,10 @@ searchForm.addEventListener('submit', async function(event) {
 
 function addAnime(id){
   addedAnimes = JSON.parse(localStorage.getItem("addedAnimes"))
-  if(addedAnimes.filter(anime => anime.mal_id == id) == 0 || !addedAnimes){
+  let isAlreadyAdded = false
+  if(addedAnimes)
+    isAlreadyAdded = !!addedAnimes.filter(anime => anime.mal_id == id) == 0
+  if(isAlreadyAdded || !addedAnimes){
     newAnime = animesList.find(anime => anime.mal_id == id);
     newAnime.currentEpisode = 1;
     addedAnimes = addedAnimes ? [...addedAnimes, newAnime] : [newAnime]
